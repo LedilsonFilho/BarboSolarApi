@@ -1,0 +1,51 @@
+body {
+    padding-top: 68px;
+    background:url('../img/fundo.png');  
+    background-size: 100%
+}
+
+.alturacard{
+  min-height: 430px;
+}
+
+.fundobarbo{
+  background-color: rgb(52, 52, 52);
+}
+
+.imglogo{
+    max-height: 70px;   
+    
+  }
+.iconebarbo{
+  max-height: 50px;
+}
+
+.borda{
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-width: 5px;
+  border-color: rgb(62, 62, 62);
+}
+
+
+  .fundohead{  
+    background: url('../img/headfundo.png');
+    color: #fff;
+    font-weight: bold;
+    background-size: cover;
+    
+  }
+  .carousel-caption {    
+    background-color: rgba(0, 0, 0, 0.5);
+   
+    
+    
+  }
+  .carousel-item {    
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }

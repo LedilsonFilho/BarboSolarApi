@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Barbo Engenharia</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ asset('/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('/css/barbosolar.scss')}}" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fundohead navbar-dark fixed-top m-0 p-0">
+        <div class="container">
+            <img src="img/logosolar.png" class="imglogo img-fluid navbar-brand">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse align-items-end flex-column" style="height: 70px;"
+                id="navbarResponsive">
+                <ul class="navbar-nav mt-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>                    
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" data-toggle="modal" data-target="#loginModal">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="borda">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="8000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One-->
+                <div class="carousel-item active" style="background-image: url('../carrosel/fundocomercial.jpg')">
+                    <div class="d-flex align-items-center flex-column" style="height: 200px;">
+                        <div class="mt-auto">
+                            <img class="img-fluid" style="max-height: 48vh;" src="/carrosel/comercial.png">
+                        </div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3 class="display-4 d-none d-md-block">Projetos Comerciais</h3>
+                        <p class="lead">Soluções para seu negócio</p>
+                    </div>
+                </div>
+
+                <!-- Slide Two -->
+                <div class="carousel-item " style="background-image: url('../carrosel/fundoresidencia.png')">
+                    <div class="d-flex align-items-center flex-column" style="height: 200px;">
+                        <div class="mt-auto">
+                            <img class="img-fluid" style="max-height: 48vh;" src="/carrosel/residencial.png">
+                        </div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3 class="display-4 d-none d-md-block">Projetos Residências</h3>
+                        <p class="lead">Soluções para sua residência</p>
+                    </div>
+                </div>
+
+
+                <!-- Slide Two -->
+                <div class="carousel-item " style="background-image: url('../carrosel/fundocondominio.jpg')">
+                    <div class="d-flex align-items-center flex-column" style="height: 200px;">
+                        <div class="mt-auto">
+                            <img class="img-fluid" style="max-height: 48vh;" src="/carrosel/condominio.png">
+                        </div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3 class="display-4 d-none d-md-block">Projetos para Condomínios</h3>
+                        <p class="lead">Soluções para seu condominio</p>
+                    </div>
+                </div>
+                
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+       
+    {% block body %}{% endblock %}
+
+    <!-- Footer -->
+    <footer class="py-2 fundobarbo">
+        <div class="container">
+            <p class="m-0 text-center">Copyright &copy; Barbo Engenharia 2019</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ asset('/bootstrap/js/jquery-3.4.1.js') }}"></script>
+    <script src="{{ asset('/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+</body>
+
+</html>

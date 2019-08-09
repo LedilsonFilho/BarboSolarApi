@@ -1,0 +1,43 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+instalacoes:
+  path: /instalacoes
+  controller: App\Controller\InstalacaoController::buscarTodos
+  methods:
+    - GET
+instalacao:
+  path: /instalacoes/{id}
+  controller: App\Controller\InstalacaoController::buscarUm
+  methods:
+    - GET
+nova_instalacao:
+  path: /instalacoes
+  controller: App\Controller\InstalacaoController::novo
+  methods:
+    - POST
+remove_instalacao:
+  path: /instalacoes/{id}
+  controller: App\Controller\InstalacaoController::remove
+  methods:
+    - DELETE
+atualiza_instalacao:
+  path: /instalacoes/{id}
+  controller: App\Controller\InstalacaoController::atualiza
+  methods:
+    - PUT
+consumo:
+  path: /consumo/{id_instalacao}/{ano}/{credito}
+  controller: App\Controller\ConsumoController::buscarPorIdAnoCredito
+  methods:
+    - GET
+nova_consumo:
+  path: /consumo
+  controller: App\Controller\ConsumoController::novo
+  methods:
+    - POST
+Lista consumo:
+  path: /consumo
+  controller: App\Controller\ConsumoController::buscarTodos
+  methods:
+    - GET
